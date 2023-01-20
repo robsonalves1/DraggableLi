@@ -1,0 +1,29 @@
+.slide-container {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: 400%;
+        transition: transform 0.3s ease-out;
+    }
+
+    li {
+        display: grid;
+        width: 25%;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        img {
+            pointer-events: none;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+        }
+    }
+}
